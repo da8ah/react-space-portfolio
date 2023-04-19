@@ -1,13 +1,15 @@
-import Navbar from "@/components/Navbar";
-
 export default function Banner() {
 	return (
 		<section
 			id="home"
-			className="w-full h-screen px-20 bg-[url(@/assets/bg-banner.png)] bg-top bg-cover bg-no-repeat"
+			className="w-full h-screen px-24 bg-[url(@/assets/bg-banner.png)] bg-cover bg-no-repeat text-white"
 		>
-			<Navbar />
-			<div>¡Hola Mundo!</div>
+			<div id="hero" className="fixed top-64 flex">
+				<div>Welcome!</div>
+				<div>
+					<img src="" alt="" />
+				</div>
+			</div>
 		</section>
 	);
 }
