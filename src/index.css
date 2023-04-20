@@ -26,3 +26,7 @@
         font-family: 'Centra', sans-serif !important;
     }
 }
+
+#hero img {
+    animation: updown 3s linear infinite;
+}
