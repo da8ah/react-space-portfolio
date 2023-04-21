@@ -53,26 +53,30 @@ export default function Banner() {
 	return (
 		<section
 			id="home"
-			className="w-full h-screen bg-[url(@/assets/bg-banner.png)] lg:px-24 md:px-5 lg:bg-top md:bg-center bg-cover bg-no-repeat text-white"
+			className="w-full h-screen bg-fixed bg-[url(@/assets/bg-banner.png)] lg:px-24 lg:bg-top md:px-5 md:bg-center bg-cover bg-no-repeat text-white"
 		>
-			<div id="hero" className="fixed top-64 flex flex-row">
-				<TrackVisibility className="w-[50%]">
+			<div id="hero" className="relative top-64 flex flex-row items-start">
+				<TrackVisibility className="w-[55%]">
 					{({ isVisible }) => (
 						<div
 							className={isVisible ? "animate__animated animate__fadeIn" : ""}
 						>
-							<span className="tagline">Welcome to my Portfolio</span>
-							<h1>
-								{`Hi! I'm Judy`}{" "}
+							<span className="text-2xl font-bold tracking-wide p-2 ring-1 ring-white bg-gradient-to-r from-[#AA367C] to-[#4A2FBD]">
+								Welcome to my Portfolio
+							</span>
+							<h1 className="my-5 text-7xl font-bold">
+								Hi! I'm{" "}
+								<span className="text-transparent bg-clip-text bg-gradient-to-br from-pink-400 to-red-600">
+									Tiber{" "}
+								</span>
 								<span
-									className="txt-rotate"
-									// dataPeriod="1000"
+									className=""
 									data-rotate='[ "Web Developer", "Web Designer", "UI/UX Designer" ]'
 								>
 									<span className="wrap">{text}</span>
 								</span>
 							</h1>
-							<p>
+							<p className="text-gray-400 tracking-widest">
 								Lorem Ipsum is simply dummy text of the printing and typesetting
 								industry. Lorem Ipsum has been the industry's standard dummy
 								text ever since the 1500s, when an unknown printer took a galley
@@ -84,13 +88,15 @@ export default function Banner() {
 						</div>
 					)}
 				</TrackVisibility>
-				<TrackVisibility className="w-[50%] bg-white">
+				<TrackVisibility className="w-[45%]">
 					{({ isVisible }) => (
 						<div
-							className={isVisible ? "animate__animated animate__zoomIn" : ""}
+							className={`flex justify-center animate-[bounce_5s_linear_infinite] ${
+								isVisible ? "animate__animated animate__zoomIn" : ""
+							}`}
 						>
 							<img
-								className="w-full h-full object-contain"
+								className="w-[80%] ml-10"
 								src={banner}
 								alt="astronaut floating in space"
 							/>
