@@ -22,8 +22,8 @@ export default function Navbar() {
 			</div>
 			<div className="lg:w-[60%] flex flex-row justify-between items-center">
 				<div className="lg:w-[45%] flex justify-around">
-					<NavLink href="#home">Home</NavLink>
-					<NavLink>Skills</NavLink>
+					<NavLink href="#banner">Home</NavLink>
+					<NavLink href="#skills">Skills</NavLink>
 					<NavLink>Projects</NavLink>
 				</div>
 				<div className="lg:w-[55%] flex justify-end items-center">

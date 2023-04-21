@@ -1,4 +1,5 @@
 import banner from "@/assets/banner-img.svg";
+import Button from "@/components/ui/Button";
 import "animate.css";
 import { useEffect, useState } from "react";
 import { BsArrowRightCircle } from "react-icons/bs";
@@ -10,7 +11,7 @@ export default function Banner() {
 	const [text, setText] = useState("");
 	const [delta, setDelta] = useState(300 - Math.random() * 100);
 	const [index, setIndex] = useState(1);
-	const toRotate = ["Web Developer", "Web Designer", "UI/UX Designer"];
+	const toRotate = ["Full-Stack Developer", "Web Designer", "UI/UX Designer"];
 	const period = 2000;
 
 	useEffect(() => {
@@ -18,9 +19,7 @@ export default function Banner() {
 			tick();
 		}, delta);
 
-		return () => {
-			clearInterval(ticker);
-		};
+		return () => clearInterval(ticker);
 	}, [text]);
 
 	const tick = () => {
@@ -52,7 +51,7 @@ export default function Banner() {
 
 	return (
 		<section
-			id="home"
+			id="banner"
 			className="w-full h-screen bg-fixed bg-[url(@/assets/bg-banner.png)] lg:px-24 lg:bg-top md:px-5 md:bg-center bg-cover bg-no-repeat text-white"
 		>
 			<div id="hero" className="relative top-64 flex flex-row items-start">
@@ -61,7 +60,7 @@ export default function Banner() {
 						<div
 							className={isVisible ? "animate__animated animate__fadeIn" : ""}
 						>
-							<span className="text-2xl font-bold tracking-wide p-2 ring-1 ring-white bg-gradient-to-r from-[#AA367C] to-[#4A2FBD]">
+							<span className="text-2xl font-bold font tracking-wide p-2 ring-1 ring-white bg-gradient-to-r from-[#AA367C] to-[#4A2FBD]">
 								Welcome to my Portfolio
 							</span>
 							<h1 className="my-5 text-7xl font-bold">
@@ -69,12 +68,7 @@ export default function Banner() {
 								<span className="text-transparent bg-clip-text bg-gradient-to-br from-pink-400 to-red-600">
 									Tiber{" "}
 								</span>
-								<span
-									className=""
-									data-rotate='[ "Web Developer", "Web Designer", "UI/UX Designer" ]'
-								>
-									<span className="wrap">{text}</span>
-								</span>
+								<span className="wrap">{text}</span>
 							</h1>
 							<p className="text-gray-400 tracking-widest">
 								Lorem Ipsum is simply dummy text of the printing and typesetting
@@ -82,9 +76,9 @@ export default function Banner() {
 								text ever since the 1500s, when an unknown printer took a galley
 								of type and scrambled it to make a type specimen book.
 							</p>
-							<button className="flex flex-row">
-								Let’s Connect <BsArrowRightCircle size={25} />
-							</button>
+							<Button className="flex flex-row mt-10 text-white font-bold">
+								Let’s Connect <BsArrowRightCircle size={25} className="ml-2" />
+							</Button>
 						</div>
 					)}
 				</TrackVisibility>
@@ -96,7 +90,7 @@ export default function Banner() {
 							}`}
 						>
 							<img
-								className="w-[80%] ml-10"
+								className="w-[90%] ml-10"
 								src={banner}
 								alt="astronaut floating in space"
 							/>
