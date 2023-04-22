@@ -56,7 +56,7 @@ export default function Banner() {
 	return (
 		<section
 			id="banner"
-			className="w-full h-screen bg-fixed bg-[url(@/assets/bg-banner.png)] lg:px-24 lg:bg-top md:px-5 md:bg-center bg-cover bg-no-repeat text-white"
+			className="w-full h-[110vh] bg-fixed bg-[url(@/assets/bg-banner.png)] lg:px-24 lg:bg-top md:px-5 md:bg-center bg-cover bg-no-repeat text-white"
 		>
 			<div id="hero" className="relative top-64 flex flex-row items-start">
 				<div className="w-[55%]">
