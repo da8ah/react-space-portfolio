@@ -84,7 +84,7 @@ export default function Banner() {
 						</Button>
 					</div>
 				</div>
-				<div className="w-[45%] animate-[bounce_5s_linear_infinite]">
+				<div className="w-[45%] animate-[updown_5s_linear_infinite]">
 					<div
 						className={`flex justify-center ${
 							isVisible ? "animate__animated animate__zoomIn" : ""

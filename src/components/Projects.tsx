@@ -1,6 +1,3 @@
-import proj1 from "@/assets/projects-img1.png";
-import proj2 from "@/assets/projects-img2.png";
-import proj3 from "@/assets/projects-img3.png";
 import ProjectCard from "@/components/ProjectCard";
 import * as Tabs from "@radix-ui/react-tabs";
 
@@ -9,32 +6,32 @@ export default function Projects() {
 		{
 			title: "Business Startup",
 			description: "Design & Development",
-			imgURL: "@/assets/projects-img1.png",
+			imgURL: "projects-img1.png",
 		},
 		{
 			title: "Business Startup",
 			description: "Design & Development",
-			imgURL: "@/assets/projects-img2.png",
+			imgURL: "projects-img2.png",
 		},
 		{
 			title: "Business Startup",
 			description: "Design & Development",
-			imgURL: "@/assets/projects-img3.png",
+			imgURL: "projects-img3.png",
 		},
 		{
 			title: "Business Startup",
 			description: "Design & Development",
-			imgURL: "@/assets/projects-img1.png",
+			imgURL: "projects-img1.png",
 		},
 		{
 			title: "Business Startup",
 			description: "Design & Development",
-			imgURL: "@/assets/projects-img2.png",
+			imgURL: "projects-img2.png",
 		},
 		{
 			title: "Business Startup",
 			description: "Design & Development",
-			imgURL: "@/assets/projects-img3.png",
+			imgURL: "projects-img3.png",
 		},
 	];
 

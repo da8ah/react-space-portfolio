@@ -27,7 +27,7 @@
     }
 }
 
-@keyframes bounce {
+@keyframes updown {
 
     0%,
     100% {
@@ -38,4 +38,15 @@
         transform: translateY(0);
     }
 
+}
+
+@keyframes down {
+
+    0% {
+        transform: translateY(10%);
+    }
+
+    50% {
+        transform: translateY(0);
+    }
 }
