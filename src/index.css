@@ -40,6 +40,19 @@
 
 }
 
+@keyframes zoom-in-out {
+
+    0%,
+    100% {
+        transform: scale(95%, 95%);
+    }
+
+    50% {
+        transform: scale(100%);
+    }
+
+}
+
 div#card-bg {
     visibility: hidden;
     height: 0;
@@ -60,4 +73,8 @@ div#card:hover>div#card-content {
     transition: linear 0.3s;
     visibility: visible;
     top: -10%;
+}
+
+a:hover>.footer-icons {
+    filter: invert(100%);
 }

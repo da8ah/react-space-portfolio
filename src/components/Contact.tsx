@@ -30,11 +30,11 @@ export default function Contact() {
 	return (
 		<section
 			id="contact"
-			className="w-full py-20 flex flex-row justify-between items-center bg-fixed bg-gradient-to-r from-[#AA367C] to-[#4A2FBD] lg:px-24 md:px-5 text-white"
+			className="w-full py-20 pb-40 flex flex-row justify-between items-center bg-fixed bg-gradient-to-r from-[#AA367C] to-[#4A2FBD] lg:px-24 md:px-5 text-white"
 		>
 			<div className="w-[50%] flex justify-center items-center">
 				<img
-					className="w-[90%]"
+					className="w-[90%] animate-[zoom-in-out_3s_ease-in-out_infinite]"
 					src={contact}
 					alt="a graphic of a person surrounded with devices and multimedia resources"
 				/>
