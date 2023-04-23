@@ -38,7 +38,9 @@ export default function Navbar() {
 							<img className="w-[40%] h-[40%]" src={navicon3} alt="" />
 						</NavBubble>
 					</div>
-					<NavButton className="mr-1 ml-12 px-9 py-4">Let's Connect</NavButton>
+					<NavButton href="#contact" className="mr-1 ml-12 px-9 py-4">
+						Let's Connect
+					</NavButton>
 				</div>
 			</div>
 		</nav>

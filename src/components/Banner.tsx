@@ -79,8 +79,10 @@ export default function Banner() {
 							ever since the 1500s, when an unknown printer took a galley of
 							type and scrambled it to make a type specimen book.
 						</p>
-						<Button className="flex flex-row mt-10 text-white font-bold">
-							Let’s Connect <BsArrowRightCircle size={25} className="ml-2" />
+						<Button className="mt-10">
+							<a href="#contact" className="flex flex-row text-white font-bold">
+								Let’s Connect <BsArrowRightCircle size={25} className="ml-2" />
+							</a>
 						</Button>
 					</div>
 				</div>
