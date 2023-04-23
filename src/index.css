@@ -40,13 +40,24 @@
 
 }
 
-@keyframes down {
+div#card-bg {
+    visibility: hidden;
+    height: 0;
+}
 
-    0% {
-        transform: translateY(10%);
-    }
+div#card-content {
+    visibility: hidden;
+    transition: 0.5s ease-in-out;
+}
 
-    50% {
-        transform: translateY(0);
-    }
+div#card:hover>div#card-bg {
+    transition: linear 0.3s;
+    visibility: visible;
+    height: 100%;
+}
+
+div#card:hover>div#card-content {
+    transition: linear 0.3s;
+    visibility: visible;
+    top: -10%;
 }

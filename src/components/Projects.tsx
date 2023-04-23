@@ -37,8 +37,8 @@ export default function Projects() {
 
 	return (
 		<section
-			id="skills"
-			className="w-full pt-10 flex flex-col items-center bg-fixed bg-black lg:px-24 md:px-5 text-white"
+			id="projects"
+			className="w-full py-20 flex flex-col items-center bg-fixed bg-black lg:px-24 md:px-5 text-white"
 		>
 			<h2 className="text-5xl font-bold">Projects</h2>
 			<p className="my-10 px-60 text-gray-400 tracking-widest text-center">

@@ -13,10 +13,18 @@ export default function ProjectCard({
 }: ProjectCardType) {
 	return (
 		<div
+			id="card"
 			style={{ backgroundImage: `url(${imgURL})` }}
-			className={`rounded-3xl bg-cover bg-no-repeat ${className}`}
+			className={`relative rounded-3xl bg-cover bg-no-repeat ${className}`}
 		>
-			<div className="rounded-3xl hover:animate-[updown_0.4s_ease-in-out] w-full h-full flex flex-col justify-center items-center bg-gradient-to-r from-[rgba(170,54,124,0.5)] to-[rgba(74,47,189,0.5)]">
+			<div
+				id="card-bg"
+				className="absolute rounded-3xl w-full h-full bg-gradient-to-r from-[rgba(170,54,124,0.9)] to-[rgba(74,47,189,0.9)]"
+			/>
+			<div
+				id="card-content"
+				className="absolute top-0 pb-12 pl-10 h-full text-center flex flex-col justify-end"
+			>
 				<h4 className="my-1 text-2xl font-bold">{title}</h4>
 				<span className="italic tracking-wider">{description}</span>
 			</div>
