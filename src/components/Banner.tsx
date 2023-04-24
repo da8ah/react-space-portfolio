@@ -95,7 +95,7 @@ export default function Banner() {
 						<img
 							className="w-[90%] ml-10"
 							src={banner}
-							alt="astronaut floating in space"
+							alt="astronaut floating in the space"
 						/>
 					</div>
 				</div>

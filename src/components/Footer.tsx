@@ -52,7 +52,11 @@ export default function Footer() {
 			<div className="w-full pt-60 pb-20 flex flex-row justify-between">
 				<div className="flex">
 					<a className="flex" href="">
-						<img src={logo} alt="logo" className="w-40 p-2" />
+						<img
+							src={logo}
+							alt="logo with link to the start of the page"
+							className="w-40 p-2"
+						/>
 					</a>
 				</div>
 				<div className="flex flex-col items-end">
@@ -61,21 +65,21 @@ export default function Footer() {
 							<img
 								className="footer-icons w-[40%] h-[40%]"
 								src={navicon1}
-								alt=""
+								alt="linkedin icon with link to my github"
 							/>
 						</NavBubble>
 						<NavBubble className="mx-1 h-9 w-9 hover:animate-[spin_3s_ease] hover:bg-white">
 							<img
 								className="footer-icons w-[40%] h-[40%]"
 								src={navicon2}
-								alt=""
+								alt="facebook icon with link to my github"
 							/>
 						</NavBubble>
 						<NavBubble className="mx-1 h-9 w-9 hover:animate-[spin_3s_ease] hover:bg-white">
 							<img
 								className="footer-icons w-[40%] h-[40%]"
 								src={navicon3}
-								alt=""
+								alt="instagram icon with link to my github"
 							/>
 						</NavBubble>
 					</div>

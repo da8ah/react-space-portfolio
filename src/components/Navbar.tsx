@@ -16,8 +16,16 @@ export default function Navbar() {
 			className="absolute top-7 w-full lg:px-24 md:px-5 bg-transparent text-white flex flex-row justify-between items-center"
 		>
 			<div className="lg:w-[40%] flex">
-				<a href="">
-					<img src={logo} alt="logo" className="w-32 p-2" />
+				<a
+					href="https://www.youtube.com/watch?v=hYv6BM2fWd8"
+					target="_blank"
+					rel="noopener"
+				>
+					<img
+						src={logo}
+						alt="logo with link to space portfolio video tutorial"
+						className="w-32 p-2"
+					/>
 				</a>
 			</div>
 			<div className="lg:w-[60%] flex flex-row justify-between items-center">
@@ -29,13 +37,25 @@ export default function Navbar() {
 				<div className="lg:w-[55%] flex justify-end items-center">
 					<div>
 						<NavBubble className="mx-1 h-9 w-9">
-							<img className="w-[40%] h-[40%]" src={navicon1} alt="" />
+							<img
+								className="w-[40%] h-[40%]"
+								src={navicon1}
+								alt="linkedin icon with link to my github"
+							/>
 						</NavBubble>
 						<NavBubble className="mx-1 h-9 w-9">
-							<img className="w-[40%] h-[40%]" src={navicon2} alt="" />
+							<img
+								className="w-[40%] h-[40%]"
+								src={navicon2}
+								alt="facebook icon with link to my github"
+							/>
 						</NavBubble>
 						<NavBubble className="mx-1 h-9 w-9">
-							<img className="w-[40%] h-[40%]" src={navicon3} alt="" />
+							<img
+								className="w-[40%] h-[40%]"
+								src={navicon3}
+								alt="instagram icon with link to my github"
+							/>
 						</NavBubble>
 					</div>
 					<NavButton href="#contact" className="mr-1 ml-12 px-9 py-4">

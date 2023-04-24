@@ -46,19 +46,35 @@ export default function Skills() {
 					className="w-full mt-16 owl-carousel owl-theme text-center"
 				>
 					<div className="flex flex-col justify-center items-center">
-						<img className="w-2/4 mb-5" src={meter1} alt="Image" />
+						<img
+							className="w-2/4 mb-5"
+							src={meter1}
+							alt="95% meter backend development"
+						/>
 						<h5>Backend Development</h5>
 					</div>
 					<div className="flex flex-col justify-center items-center">
-						<img className="w-2/4 mb-5" src={meter2} alt="Image" />
+						<img
+							className="w-2/4 mb-5"
+							src={meter2}
+							alt="80% meter brand identity"
+						/>
 						<h5>Brand Identity</h5>
 					</div>
 					<div className="flex flex-col justify-center items-center">
-						<img className="w-2/4 mb-5" src={meter3} alt="Image" />
+						<img
+							className="w-2/4 mb-5"
+							src={meter3}
+							alt="90% meter logo design"
+						/>
 						<h5>Logo Design</h5>
 					</div>
 					<div className="flex flex-col justify-center items-center">
-						<img className="w-2/4 mb-5" src={meter1} alt="Image" />
+						<img
+							className="w-2/4 mb-5"
+							src={meter1}
+							alt="95% meter frontend development"
+						/>
 						<h5>Frontend Development</h5>
 					</div>
 				</Carousel>
