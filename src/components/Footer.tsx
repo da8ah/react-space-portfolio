@@ -23,8 +23,8 @@ export default function Footer() {
 			id="footer"
 			className="relative w-full flex flex-col items-center bg-[url(@/assets/bg-footer.png)] lg:px-24 md:px-5 text-black"
 		>
-			<div className="absolute -mt-32 w-full flex justify-center bg-transparent">
-				<div className="rounded-[70px] w-4/5 px-32 py-20 flex flex-row justify-around bg-white">
+			<div className="absolute -mt-32 w-full lg:px-0 md:px-2 flex justify-center bg-transparent">
+				<div className="rounded-[70px] lg:w-4/5 md:w-full lg:px-32 md:px-20 py-20 flex flex-row justify-around bg-white">
 					<h3 className="w-[30%] text-2xl font-bold">
 						Subscribe to our Newsletter<br></br> & Never miss latest updates 👋
 					</h3>

@@ -32,14 +32,14 @@ export default function Contact() {
 			id="contact"
 			className="w-full py-20 pb-40 flex flex-row justify-between items-center bg-fixed bg-gradient-to-r from-[#AA367C] to-[#4A2FBD] lg:px-24 md:px-5 text-white"
 		>
-			<div className="w-[50%] flex justify-center items-center">
+			<div className="lg:w-[50%] md:w-[40%] flex justify-center items-center">
 				<img
 					className="w-[90%] animate-[zoom-in-out_3s_ease-in-out_infinite]"
 					src={contact}
 					alt="a graphic of a person surrounded with devices and multimedia resources"
 				/>
 			</div>
-			<div className="w-[50%]">
+			<div className="lg:w-[50%] md:w-[60%]">
 				<h2 className="text-5xl font-bold">Get In Touch</h2>
 				<form
 					className="my-10 flex flex-row flex-wrap justify-between"

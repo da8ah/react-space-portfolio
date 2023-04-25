@@ -1,5 +1,6 @@
 type ProjectCardType = {
 	className: string;
+	classNameHover: string;
 	title: string;
 	description: string;
 	imgURL: string;
@@ -7,6 +8,7 @@ type ProjectCardType = {
 
 export default function ProjectCard({
 	className,
+	classNameHover,
 	title,
 	description,
 	imgURL,
@@ -23,7 +25,7 @@ export default function ProjectCard({
 			/>
 			<div
 				id="card-content"
-				className="absolute top-0 pb-12 pl-10 h-full text-center flex flex-col justify-end"
+				className={`absolute top-0 h-full text-center flex flex-col justify-end ${classNameHover}`}
 			>
 				<h4 className="my-1 text-2xl font-bold">{title}</h4>
 				<span className="italic tracking-wider">{description}</span>

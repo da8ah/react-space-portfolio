@@ -41,7 +41,7 @@ export default function Projects() {
 			className="w-full py-20 flex flex-col items-center bg-fixed bg-black lg:px-24 md:px-5 text-white"
 		>
 			<h2 className="text-5xl font-bold">Projects</h2>
-			<p className="my-10 px-60 text-gray-400 tracking-widest text-center">
+			<p className="my-10 lg:px-60 md:px-20 text-gray-400 tracking-widest text-center">
 				Lorem Ipsum is simply dummy text of the printing and typesetting
 				industry. Lorem Ipsum has been the industry's standard dummy text ever
 				since the 1500s, when an unknown printer took a galley of type and
@@ -76,13 +76,14 @@ export default function Projects() {
 					</Tabs.Trigger>
 				</Tabs.List>
 				<Tabs.Content
-					className="mt-10 flex flex-row flex-wrap justify-center"
+					className="w-full mt-10 flex flex-row flex-wrap justify-center"
 					value="tab1"
 				>
 					{projects.map((project, index) => {
 						return (
 							<ProjectCard
-								className="w-1/4 h-[200px] m-2"
+								className="lg:w-1/4 md:w-[30%] h-[200px] m-2"
+								classNameHover="pb-12 lg:pl-10 md:pl-8"
 								key={index}
 								{...project}
 							/>
