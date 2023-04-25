@@ -30,19 +30,19 @@ export default function Contact() {
 	return (
 		<section
 			id="contact"
-			className="w-full py-20 pb-40 flex flex-row justify-between items-center bg-fixed bg-gradient-to-r from-[#AA367C] to-[#4A2FBD] lg:px-24 md:px-5 text-white"
+			className="w-full py-20 pb-40 flex flex-col md:flex-row justify-between items-center bg-fixed bg-gradient-to-r from-[#AA367C] to-[#4A2FBD] lg:px-24 md:px-5 px-1 text-white"
 		>
-			<div className="lg:w-[50%] md:w-[40%] flex justify-center items-center">
+			<div className="lg:w-[50%] md:w-[40%] py-5 md:py-0 flex justify-center items-center">
 				<img
 					className="w-[90%] animate-[zoom-in-out_3s_ease-in-out_infinite]"
 					src={contact}
 					alt="a graphic of a person surrounded with devices and multimedia resources"
 				/>
 			</div>
-			<div className="lg:w-[50%] md:w-[60%]">
+			<div className="lg:w-[50%] md:w-[60%] flex flex-col items-center md:flex-none">
 				<h2 className="text-5xl font-bold">Get In Touch</h2>
 				<form
-					className="my-10 flex flex-row flex-wrap justify-between"
+					className="my-10 flex flex-row flex-wrap md:justify-between justify-around"
 					onSubmit={handleSubmit}
 				>
 					<input
@@ -74,14 +74,14 @@ export default function Contact() {
 						onChange={(e) => onFormUpdate("phone", e.target.value)}
 					/>
 					<textarea
-						className="w-full rounded-2xl my-2 p-5 bg-white bg-opacity-10 placeholder:text-white focus:outline-none focus:ring-1 focus:ring-white"
+						className="resize-none w-full rounded-2xl my-2 p-5 bg-white bg-opacity-10 placeholder:text-white focus:outline-none focus:ring-1 focus:ring-white"
 						rows={6}
 						value={formDetails.message}
 						placeholder="Message"
 						onChange={(e) => onFormUpdate("message", e.target.value)}
-					></textarea>
+					/>
 					<button
-						className="w-1/4 rounded-md mt-10 py-3 bg-white text-2xl text-black font-extrabold focus:outline-none focus:shadow-lg focus:shadow-black"
+						className="w-2/4 md:w-1/4 rounded-md mt-10 py-3 bg-white text-2xl text-black font-extrabold focus:outline-none focus:shadow-lg focus:shadow-black"
 						type="submit"
 					>
 						<span>{buttonText}</span>

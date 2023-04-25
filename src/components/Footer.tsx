@@ -24,15 +24,15 @@ export default function Footer() {
 			className="relative w-full flex flex-col items-center bg-[url(@/assets/bg-footer.png)] lg:px-24 md:px-5 text-black"
 		>
 			<div className="absolute -mt-32 w-full lg:px-0 md:px-2 flex justify-center bg-transparent">
-				<div className="rounded-[70px] lg:w-4/5 md:w-full lg:px-32 md:px-20 py-20 flex flex-row justify-around bg-white">
-					<h3 className="w-[30%] text-2xl font-bold">
+				<div className="rounded-[30px] md:rounded-[70px] lg:w-4/5 w-full lg:px-32 md:px-20 py-10 md:py-20 flex flex-col md:flex-row justify-around bg-white">
+					<h3 className="md:w-[30%] text-xl md:text-2xl font-bold text-center md:text-left">
 						Subscribe to our Newsletter<br></br> & Never miss latest updates 👋
 					</h3>
-					<form className="w-[50%]" onSubmit={handleSubmit}>
+					<form className="md:w-[60%] px-1 md:px-0" onSubmit={handleSubmit}>
 						<div className="bg-gradient-to-r from-[#AA367C] to-[#4A2FBD] rounded-2xl p-[2px]">
 							<div className="flex flex-row justify-between rounded-[15px] pl-3 pr-1 py-1 bg-white">
 								<input
-									className="w-3/5 focus:outline-none animate-pulse focus:animate-none"
+									className="w-4/6 md:w-3/5 focus:outline-none animate-pulse focus:animate-none"
 									value={email}
 									type="email"
 									onChange={(e) => setEmail(e.target.value)}
@@ -40,7 +40,7 @@ export default function Footer() {
 								/>
 								<button
 									type="submit"
-									className="rounded-lg w-36 py-3 bg-gradient-to-r from-[#AA367C] to-[#4A2FBD] text-white focus:outline-none focus:shadow-lg focus:shadow-purple-500"
+									className="rounded-lg w-[25%] md:w-36 py-3 bg-gradient-to-r from-[#AA367C] to-[#4A2FBD] text-white focus:outline-none focus:shadow-lg focus:shadow-purple-500"
 								>
 									{buttonText}
 								</button>
@@ -49,7 +49,7 @@ export default function Footer() {
 					</form>
 				</div>
 			</div>
-			<div className="w-full pt-60 pb-20 flex flex-row justify-between">
+			<div className="w-full pt-60 pb-20 flex flex-col-reverse md:flex-row justify-between items-center">
 				<div className="flex">
 					<a className="flex" href="">
 						<img
@@ -59,7 +59,7 @@ export default function Footer() {
 						/>
 					</a>
 				</div>
-				<div className="flex flex-col items-end">
+				<div className="flex flex-col items-center md:items-end">
 					<div>
 						<NavBubble className="mx-1 h-9 w-9 hover:animate-[spin_3s_ease] hover:bg-white">
 							<img

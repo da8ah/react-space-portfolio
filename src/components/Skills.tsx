@@ -28,9 +28,9 @@ export default function Skills() {
 	return (
 		<section
 			id="skills"
-			className="w-full h-full py-10 flex items-center bg-fixed bg-[url(@/assets/bg-banner.png)] lg:px-24 lg:bg-top md:px-5 md:bg-center bg-cover bg-no-repeat text-white"
+			className="w-full h-full md:py-10 flex items-center bg-fixed bg-[url(@/assets/bg-banner.png)] lg:px-24 lg:bg-top md:px-5 md:bg-center bg-cover bg-no-repeat text-white"
 		>
-			<div className="rounded-[90px] w-full lg:px-40 py-10 flex flex-col justify-center items-center bg-[#0f0f0f]">
+			<div className="md:rounded-[90px] w-full lg:px-40 py-10 flex flex-col justify-center items-center bg-[#0f0f0f]">
 				<h2 className="text-7xl font-bold">Skills</h2>
 				<p className="my-5 text-gray-400 tracking-widest text-center">
 					Lorem Ipsum is simply dummy text of the printing and typesetting
@@ -44,11 +44,10 @@ export default function Skills() {
 					autoPlaySpeed={3000}
 					transitionDuration={500}
 					className="z-10 w-full mt-16 owl-carousel owl-theme text-center"
-					removeArrowOnDeviceType={["tablet", "mobile"]}
 				>
 					<div className="flex flex-col justify-center items-center">
 						<img
-							className="mb-5 lg:w-2/4 md:w-2/6"
+							className="mb-5 lg:w-2/4 w-2/6"
 							src={meter1}
 							alt="95% meter backend development"
 						/>
@@ -56,7 +55,7 @@ export default function Skills() {
 					</div>
 					<div className="flex flex-col justify-center items-center">
 						<img
-							className="mb-5 lg:w-2/4 md:w-2/6"
+							className="mb-5 lg:w-2/4 w-2/6"
 							src={meter2}
 							alt="80% meter brand identity"
 						/>
@@ -64,7 +63,7 @@ export default function Skills() {
 					</div>
 					<div className="flex flex-col justify-center items-center">
 						<img
-							className="mb-5 lg:w-2/4 md:w-2/6"
+							className="mb-5 lg:w-2/4 w-2/6"
 							src={meter3}
 							alt="90% meter logo design"
 						/>
@@ -72,7 +71,7 @@ export default function Skills() {
 					</div>
 					<div className="flex flex-col justify-center items-center">
 						<img
-							className="mb-5 lg:w-2/4 md:w-2/6"
+							className="mb-5 lg:w-2/4 w-2/6"
 							src={meter1}
 							alt="95% meter frontend development"
 						/>

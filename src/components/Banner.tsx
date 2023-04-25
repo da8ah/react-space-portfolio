@@ -56,18 +56,22 @@ export default function Banner() {
 	return (
 		<section
 			id="banner"
-			className="w-full lg:h-[110vh] md:h-[100vh] bg-fixed bg-[url(@/assets/bg-banner.png)] lg:px-24 lg:bg-top md:px-5 px-1 md:bg-center bg-cover bg-no-repeat text-white"
+			className="w-full lg:h-[110vh] md:h-[100vh] h-[160vh] bg-fixed bg-[url(@/assets/bg-banner.png)] lg:px-24 lg:bg-top md:px-5 px-1 md:bg-center bg-cover bg-no-repeat text-white"
 		>
 			<div
 				id="hero"
 				className="relative lg:top-64 md:top-52 top-20 flex md:flex-row flex-col-reverse items-start"
 			>
 				<div className="md:w-[55%]">
-					<div className={isVisible ? "animate__animated animate__fadeIn" : ""}>
+					<div
+						className={`${
+							isVisible ? "animate__animated animate__fadeIn" : ""
+						} flex flex-col items-center md:items-start`}
+					>
 						<span className="shadow-lg shadow-purple-500 lg:text-2xl md:text-xl font-bold font tracking-wide p-2 ring-1 ring-white bg-gradient-to-r from-[#AA367C] to-[#4A2FBD]">
 							Welcome to my Portfolio
 						</span>
-						<h1 className="my-5 py-1 lg:text-7xl md:text-5xl font-bold drop-shadow-[0_1px_0_rgba(0,0,0,0.2)]">
+						<h1 className="self-start md:self-auto my-5 py-1 lg:text-7xl text-5xl font-bold drop-shadow-[0_1px_0_rgba(0,0,0,0.2)]">
 							Hi! I'm{" "}
 							<span className="animate-[pulse_2s_linear_infinite] text-transparent bg-clip-text bg-gradient-to-br from-pink-400 to-red-600">
 								Tiber{" "}
@@ -76,13 +80,13 @@ export default function Banner() {
 								{text}
 							</span>
 						</h1>
-						<p className="text-gray-400 tracking-widest">
+						<p className="text-gray-400 tracking-widest text-justify md:text-left">
 							Lorem Ipsum is simply dummy text of the printing and typesetting
 							industry. Lorem Ipsum has been the industry's standard dummy text
 							ever since the 1500s, when an unknown printer took a galley of
 							type and scrambled it to make a type specimen book.
 						</p>
-						<Button className="mt-10">
+						<Button className="mt-3 md:mt-10">
 							<a href="#contact" className="flex flex-row text-white font-bold">
 								Let’s Connect <BsArrowRightCircle size={25} className="ml-2" />
 							</a>

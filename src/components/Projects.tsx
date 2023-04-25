@@ -57,19 +57,19 @@ export default function Projects() {
 					aria-label="tabs example"
 				>
 					<Tabs.Trigger
-						className="w-1/4 py-3 ring-1 ring-gray-500 rounded-tl-full rounded-bl-full bg-[#0f0f0f] data-[state=active]:bg-gradient-to-r data-[state=active]:from-[#AA367C] data-[state=active]:to-[#4A2FBD]"
+						className="w-[30%] md:w-1/4 py-3 ring-1 ring-gray-500 rounded-tl-full rounded-bl-full bg-[#0f0f0f] data-[state=active]:bg-gradient-to-r data-[state=active]:from-[#AA367C] data-[state=active]:to-[#4A2FBD]"
 						value="tab1"
 					>
 						One
 					</Tabs.Trigger>
 					<Tabs.Trigger
-						className="w-1/4 py-3 ring-1 ring-gray-500 bg-[#0f0f0f] data-[state=active]:bg-gradient-to-r data-[state=active]:from-[#AA367C] data-[state=active]:to-[#4A2FBD]"
+						className="w-[30%] md:w-1/4 py-3 ring-1 ring-gray-500 bg-[#0f0f0f] data-[state=active]:bg-gradient-to-r data-[state=active]:from-[#AA367C] data-[state=active]:to-[#4A2FBD]"
 						value="tab2"
 					>
 						Two
 					</Tabs.Trigger>
 					<Tabs.Trigger
-						className="w-1/4 py-3 ring-1 ring-gray-500 rounded-tr-full rounded-br-full bg-[#0f0f0f] data-[state=active]:bg-gradient-to-r data-[state=active]:from-[#AA367C] data-[state=active]:to-[#4A2FBD]"
+						className="w-[30%] md:w-1/4 py-3 ring-1 ring-gray-500 rounded-tr-full rounded-br-full bg-[#0f0f0f] data-[state=active]:bg-gradient-to-r data-[state=active]:from-[#AA367C] data-[state=active]:to-[#4A2FBD]"
 						value="tab3"
 					>
 						Three
@@ -82,15 +82,15 @@ export default function Projects() {
 					{projects.map((project, index) => {
 						return (
 							<ProjectCard
-								className="lg:w-1/4 md:w-[30%] h-[200px] m-2"
-								classNameHover="pb-12 lg:pl-10 md:pl-8"
+								className="lg:w-1/4 md:w-[30%] w-full h-[200px] m-2"
+								classNameHover="pb-12 lg:pl-10 pl-8"
 								key={index}
 								{...project}
 							/>
 						);
 					})}
 				</Tabs.Content>
-				<Tabs.Content className="py-10 px-80 text-center" value="tab2">
+				<Tabs.Content className="py-10 md:px-80 text-center" value="tab2">
 					<p>
 						Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque
 						quam, quod neque provident velit, rem explicabo excepturi id illo
@@ -98,7 +98,7 @@ export default function Projects() {
 						quasi inventore debitis quo.
 					</p>
 				</Tabs.Content>
-				<Tabs.Content className="py-10 px-80 text-center" value="tab3">
+				<Tabs.Content className="py-10 md:px-80 text-center" value="tab3">
 					<p>
 						Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque
 						quam, quod neque provident velit, rem explicabo excepturi id illo
