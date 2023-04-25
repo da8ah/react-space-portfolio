@@ -5,15 +5,33 @@ import navicon3 from "@/assets/nav-icon3.svg";
 import NavBubble from "@/components/ui/NavBubble";
 import NavButton from "@/components/ui/NavButton";
 import NavLink from "@/components/ui/NavLink";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 export default function Navbar() {
-	const [isFloating, setPositionToFloating] = useState<boolean>(false);
+	const [isFixed, setPositionToFixed] = useState<boolean>(false);
+
+	useEffect(() => {
+		const onScroll = () => {
+			if (window.scrollY > 10) {
+				setPositionToFixed(true);
+			} else {
+				setPositionToFixed(false);
+			}
+		};
+
+		window.addEventListener("scroll", onScroll);
+
+		return () => window.removeEventListener("scroll", onScroll);
+	}, []);
 
 	return (
 		<nav
 			id="navbar"
-			className="absolute top-7 w-full lg:px-24 md:px-5 bg-transparent text-white flex flex-row justify-between items-center"
+			className={`${
+				isFixed
+					? "fixed pt-5 opacity-50 hover:opacity-100 hover:transition-opacity hover:bg-[#121212]"
+					: "absolute pt-7 bg-transparent"
+			} z-[100] w-full pb-3 lg:px-24 md:px-5 text-white flex flex-row justify-between items-center`}
 		>
 			<div className="lg:w-[40%] flex">
 				<a

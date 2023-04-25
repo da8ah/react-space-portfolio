@@ -43,7 +43,8 @@ export default function Skills() {
 					autoPlay
 					autoPlaySpeed={3000}
 					transitionDuration={500}
-					className="w-full mt-16 owl-carousel owl-theme text-center"
+					className="z-10 w-full mt-16 owl-carousel owl-theme text-center"
+					removeArrowOnDeviceType={["tablet", "mobile"]}
 				>
 					<div className="flex flex-col justify-center items-center">
 						<img
