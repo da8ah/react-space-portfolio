@@ -56,13 +56,13 @@ export default function Banner() {
 	return (
 		<section
 			id="banner"
-			className="w-full lg:h-[110vh] md:h-[100vh] bg-fixed bg-[url(@/assets/bg-banner.png)] lg:px-24 lg:bg-top md:px-5 md:bg-center bg-cover bg-no-repeat text-white"
+			className="w-full lg:h-[110vh] md:h-[100vh] bg-fixed bg-[url(@/assets/bg-banner.png)] lg:px-24 lg:bg-top md:px-5 px-1 md:bg-center bg-cover bg-no-repeat text-white"
 		>
 			<div
 				id="hero"
-				className="relative lg:top-64 md:top-52 flex flex-row items-start"
+				className="relative lg:top-64 md:top-52 top-20 flex md:flex-row flex-col-reverse items-start"
 			>
-				<div className="w-[55%]">
+				<div className="md:w-[55%]">
 					<div className={isVisible ? "animate__animated animate__fadeIn" : ""}>
 						<span className="shadow-lg shadow-purple-500 lg:text-2xl md:text-xl font-bold font tracking-wide p-2 ring-1 ring-white bg-gradient-to-r from-[#AA367C] to-[#4A2FBD]">
 							Welcome to my Portfolio
@@ -89,7 +89,7 @@ export default function Banner() {
 						</Button>
 					</div>
 				</div>
-				<div className="w-[45%] animate-[updown_5s_linear_infinite]">
+				<div className="md:w-[45%] animate-[updown_5s_linear_infinite]">
 					<div
 						className={`flex justify-center lg:items-start md:items-center ${
 							isVisible ? "animate__animated animate__zoomIn" : ""
