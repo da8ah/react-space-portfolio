@@ -38,7 +38,7 @@ export default function Projects() {
 	return (
 		<section
 			id="projects"
-			className="w-full py-20 flex flex-col items-center bg-fixed bg-black lg:px-24 md:px-5 text-white"
+			className="w-full pt-20 md:py-20 flex flex-col items-center bg-fixed bg-black lg:px-24 md:px-5 text-white"
 		>
 			<h2 className="text-5xl font-bold">Projects</h2>
 			<p className="my-10 lg:px-60 md:px-20 text-gray-400 tracking-widest text-center">
@@ -90,21 +90,31 @@ export default function Projects() {
 						);
 					})}
 				</Tabs.Content>
-				<Tabs.Content className="py-10 md:px-80 text-center" value="tab2">
-					<p>
-						Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque
-						quam, quod neque provident velit, rem explicabo excepturi id illo
-						molestiae blanditiis, eligendi dicta officiis asperiores delectus
-						quasi inventore debitis quo.
-					</p>
+				<Tabs.Content className="py-10 text-center" value="tab2">
+					<div id="container" className="flex justify-center items-center">
+						<span
+							id="water_wave"
+							className="relative overflow-hidden rounded-[50%] w-[300px] h-[300px] bg-gradient-to-r from-[#AA367C] to-[#4A2FBD]"
+						/>
+					</div>
 				</Tabs.Content>
-				<Tabs.Content className="py-10 md:px-80 text-center" value="tab3">
-					<p>
-						Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque
-						quam, quod neque provident velit, rem explicabo excepturi id illo
-						molestiae blanditiis, eligendi dicta officiis asperiores delectus
-						quasi inventore debitis quo.
-					</p>
+				<Tabs.Content
+					className="py-10 flex justify-center items-center"
+					value="tab3"
+				>
+					<div
+						id="container"
+						className="relative w-[300px] h-[300px] flex justify-center items-center"
+					>
+						<div
+							id="loader"
+							className="absolute w-[55%] h-[55%] flex justify-center items-center"
+						>
+							{new Array(8).fill(null).map((_, i) => (
+								<span key={`circle-${i}`} style={{ [`--i` as any]: i }} />
+							))}
+						</div>
+					</div>
 				</Tabs.Content>
 			</Tabs.Root>
 		</section>

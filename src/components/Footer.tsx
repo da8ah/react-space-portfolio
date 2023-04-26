@@ -49,7 +49,7 @@ export default function Footer() {
 					</form>
 				</div>
 			</div>
-			<div className="w-full pt-60 pb-20 flex flex-col-reverse md:flex-row justify-between items-center">
+			<div className="w-full pt-32 pb-10 md:pt-60 md:pb-20 flex flex-col-reverse md:flex-row justify-between items-center">
 				<div className="flex">
 					<a className="flex" href="">
 						<img
