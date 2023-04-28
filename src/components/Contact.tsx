@@ -30,7 +30,7 @@ export default function Contact() {
 	return (
 		<section
 			id="contact"
-			className="w-full py-20 pb-40 flex flex-col md:flex-row justify-between items-center bg-fixed bg-gradient-to-r from-[#AA367C] to-[#4A2FBD] lg:px-24 md:px-5 px-1 text-white"
+			className="w-full py-20 pb-40 flex flex-col md:flex-row justify-between items-center bg-gradient-to-r from-[#AA367C] to-[#4A2FBD] lg:px-24 md:px-5 px-1 text-white"
 		>
 			<div className="lg:w-[50%] md:w-[40%] py-5 md:py-0 flex justify-center items-center">
 				<img

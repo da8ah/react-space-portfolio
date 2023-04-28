@@ -82,7 +82,7 @@ export default function Projects() {
 					{projects.map((project, index) => {
 						return (
 							<ProjectCard
-								className="lg:w-1/4 md:w-[30%] w-full h-[200px] m-2"
+								className="lg:w-1/4 md:w-[30%] min-[600px]:w-[40%] w-full h-[200px] m-2"
 								classNameHover="pb-12 lg:pl-10 pl-8"
 								key={index}
 								{...project}

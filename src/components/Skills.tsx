@@ -28,7 +28,7 @@ export default function Skills() {
 	return (
 		<section
 			id="skills"
-			className="w-full h-full md:py-10 md:pb-20 flex items-center bg-fixed bg-[url(@/assets/bg-banner.png)] lg:px-24 lg:bg-top md:px-5 md:bg-center bg-cover bg-no-repeat text-white"
+			className="w-full h-full md:py-10 md:pb-20 flex items-center bg-black md:bg-fixed md:bg-[url(@/assets/bg-banner.png)] lg:px-24 lg:bg-top md:px-5 md:bg-center bg-cover bg-no-repeat text-white"
 		>
 			<div className="md:rounded-[90px] w-full lg:px-40 py-10 flex flex-col justify-center items-center bg-[#0f0f0f]">
 				<h2 className="text-7xl font-bold">Skills</h2>
